@@ -156,8 +156,23 @@
   display: flex;
     padding-top: 0;
 } 
-  
-  
+.novigation-item{
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+} 
+.novigation-icon{
+  fill:  #757575;;
+}
+.novigation-icon:hover,
+.novigation-icon:focus{
+  fill: var(--accent-color); 
+}
+.info-list .novigation-icon:hover,
+.info-list .novigation-icon:focus{
+  cursor: pointer;
+  color:  var(--accent-color);
+}
   /* ---Portfolio---- */
   .portfolio{
     background-color:#E5E5E5;
@@ -201,9 +216,14 @@
 .hero {
   background: #2f303a;
   padding-top: 200px;
-  padding-bottom: 200px;
+  padding-bottom: 200px ;
+  background-image:linear-gradient(rgba(47,48,58,0.4),rgba(47,48,58,0.4)),url("../images/hero/hero.jpg");
+  background-size: cover;
+  background-color: #C4C4C4;
   
 }
+
+
 .hero-title{
   margin-bottom: 30px;
 }
@@ -259,6 +279,7 @@ font-size: 14px;
 line-height: 1.14;
 letter-spacing: 0.03em;
 text-transform: uppercase;
+margin-top: 30px;
 }
 
 /* --Info-- */
@@ -281,7 +302,31 @@ text-transform: uppercase;
     display: flex;
     justify-content: space-between;
   }
+  .icon{
+    width: 270px;
+    height: 120px;
+    background: #F5F4FA;
+border-radius: 4px;
+  }
+  .rectangle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+   
+  }
+.rectangle-list :not( :last-child){
+  margin-right: 30px;
+}
+.rectangle-list-icon{
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 25px;
+  padding-bottom: 25px;
 
+}
+
+  
   /* ---imagesPortfolio--- */
 
   .images-list{
@@ -366,10 +411,51 @@ padding-bottom: 30px;
   
     text-align: center;
     letter-spacing: 0.03em;
+    margin-bottom: 16px;
   
     color: var(--secondary-text-color-dark);
   }
-  
+  .social{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  .social-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+    background-color: #ffffff;
+
+  }
+  .socian-icon{
+    fill: #AFB1B8;
+  }
+  .social-link:hover,
+  .social-link:focus {
+    background-color: var(--accent-color)
+  }
+  .social-link:hover .socian-icon,
+  .social-link:focus .socian-icon {
+    fill: #FFFFFF
+  }
+
+  /* ---Company---- */
+
+  .customers{
+    font-family: 'Roboto';
+font-weight: 700;
+font-size: 36px;
+line-height: 42px;
+text-align: center;
+letter-spacing: 0.03em;
+margin-top: 94px;
+
+color: #212121;
+
+  }
   /* ---Footer--- */
  
   
